@@ -33,7 +33,7 @@ func palindrom() int {
 
 				//Loop through numbers and for each match, count + 1 to good
 				for z := 0; z < count; z++ {
-					if s[z:z+1] == s[length-z-1:length-z] {
+					if s[z] == s[length-z-1] {
 						good += 1
 					}
 				}
