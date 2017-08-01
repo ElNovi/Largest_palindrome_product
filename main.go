@@ -19,8 +19,8 @@ func palindrom() int {
 	var good int
 
 	for i := 1; i <= 999; i++ {
-
 		for j := 1; j <= 999; j++ {
+
 			x := i * j
 
 			//Let's find out how many digits x have!
@@ -34,7 +34,7 @@ func palindrom() int {
 				//Loop through numbers and for each match, count + 1 to good
 				for z := 0; z < count; z++ {
 					if s[z] == s[length-z-1] {
-						good += 1
+						good++
 					}
 				}
 
@@ -46,9 +46,7 @@ func palindrom() int {
 
 				//Reset count - honestly don't know how to reset it in more noble way
 				good = 0
-
 			}
-
 		}
 	}
 
